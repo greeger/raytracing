@@ -77,7 +77,22 @@ public class Ellipse implements Surface {
 
     @Override
     public Coord getNormal(Ray ray){
-        return null;
+        Coord r0 = getIntersection(ray);
+        if(r0 == null) return null;
+        double[][] AA = new double[][]{
+                {1/(a*a), 0, 0, 0},
+                {0, 1/(b*b), 0, 0},
+                {0, 0, 1/(c*c), 0},
+                {0, 0, 0, -1}};
+        r0 = tools.linearCombination(r0, 1, rho0, -1);
+        double[][] temp = new double[][]{
+                {1, 0, 0, 0},
+                {0, 1, 0, 0},
+                {0, 0, 1, 0},
+                {0, 0, 0, 0}};
+        temp = tools.matMul(temp, tools.matSum(AA, tools.transpose(AA)));
+        temp = tools.matMul(temp, new double[][]{{r0.getX()},{r0.getY()},{r0.getZ()},{1}});
+        return tools.normalize(new Coord(temp[0][0], temp[1][0], temp[2][0]));
     }
 
     @Override

@@ -36,7 +36,10 @@ public class Main {
         Surface sphere = new Sphere(rho0, R);
         System.out.println(sphere);
 
-        Ray reflectedRay = tools.getRefractedRay(ray, sphere, 1, 3);
+        Surface ellipse = new Ellipse(rho0, 2, 2, 2);
+        System.out.println(ellipse);
+
+        Ray reflectedRay = tools.getRefractedRay(ray, ellipse, 1, 3);
         System.out.println(reflectedRay);
 
 
@@ -50,7 +53,7 @@ public class Main {
         for(int i=0; i<w; i++)
             for(int j=0; j<h; j++){
                 currRay = new Ray(new Coord((i-w/2)*scale, (j-h/2)*scale, 10), tools.normalize(new Coord(0, 0, -1)));
-                currRay = tools.getReflectedRay(currRay, sphere);
+                currRay = tools.getReflectedRay(currRay, ellipse);
                 if(currRay==null) brightness=0;
                 else
                     brightness = -tools.normDotProduct(currRay.getE(), light);
@@ -58,7 +61,7 @@ public class Main {
                 PictureUtils.drawPixel(picture, i, j, new Color((int)Math.round(255*brightness)));
             }
 
-        double rayLength = 5;
+        double rayLength = 3;
         int x0 = (int)Math.round(ray.getRho0().getX()/scale);
         int y0 = (int)Math.round(ray.getRho0().getY()/scale);
         int x1 = (int)Math.round(reflectedRay.getRho0().getX()/scale);

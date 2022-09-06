@@ -15,4 +15,6 @@ public interface MathTools {
     Coord linearCombination(Coord a, double m, Coord b, double n);
     Ray getReflectedRay(Ray ray, Surface surface);
     Ray getRefractedRay(Ray ray, Surface surface, double n1, double n2);
+    double[][] shift(double[][] a, Coord r0);
+    double[][] transpose(double[][] a);
 }

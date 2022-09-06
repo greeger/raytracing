@@ -43,7 +43,7 @@ public class Sphere implements Surface {
     public Coord getIntersection(Ray ray){
         Coord shift = tools.linearCombination(ray.getRho0(), 1, rho0, -1);
         double d = Math.pow(tools.dotProduct(shift, ray.getE()),2)
-                - (tools.dotProduct(shift, shift) - R*R);
+                - tools.dotProduct(shift, shift) + R*R;
         if(d < 0) return null;
         double t = -tools.dotProduct(shift, ray.getE()) - Math.sqrt(d);
         return tools.linearCombination(ray.getRho0(), 1, ray.getE(), t);

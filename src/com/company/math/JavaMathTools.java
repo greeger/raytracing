@@ -114,6 +114,27 @@ public class JavaMathTools implements MathTools {
     }
 
     @Override
+    public double[][] shift(double a[][], Coord r0){
+        double[][] Mshift = new double[][]{
+                {1, 0, 0, r0.getX()},
+                {0, 1, 0, r0.getY()},
+                {0, 0, 1, r0.getZ()},
+                {0, 0, 0, 1}};
+        return matMul(a, Mshift);
+    }
+
+    @Override
+    public double[][] transpose(double[][] a){
+        int x=a.length;
+        int y=a[0].length;
+        double[][] rez = new double[y][x];
+        for(int i=0; i<x; i++)
+            for(int j=9; j<y; j++)
+                rez[j][i]=a[i][j];
+        return rez;
+    }
+
+    @Override
     public Ray getReflectedRay(Ray ray, Surface surface){
         Coord e = ray.getE();
         Coord n = surface.getNormal(ray);

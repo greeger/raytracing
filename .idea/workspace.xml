@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b99b0b7-afb4-4c8b-9497-bf0e6cc8e4e3" name="Changes" comment="версия -1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/reflection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/refraction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/math/Coord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/math/JavaMathTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/math/MathTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Plane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Ray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Sphere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Surface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/picture/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/picture/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/picture/PictureUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xvideos/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/refraction.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/refraction.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/math/JavaMathTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/math/JavaMathTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/math/MathTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/math/MathTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Sphere.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +79,18 @@
       <workItem from="1662231203896" duration="8318000" />
       <workItem from="1662289934258" duration="11428000" />
       <workItem from="1662311858208" duration="13549000" />
-      <workItem from="1662378303424" duration="2616000" />
+      <workItem from="1662378303424" duration="6315000" />
+      <workItem from="1662403658762" duration="1342000" />
+      <workItem from="1662447277200" duration="12446000" />
     </task>
+    <task id="LOCAL-00001" summary="версия -1">
+      <created>1662381689418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662381689418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
